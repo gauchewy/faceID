@@ -13,6 +13,9 @@
 		714BF1BE28DC0A0D00323435 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714BF1BD28DC0A0D00323435 /* Preview Assets.xcassets */; };
 		714BF1C628DC0DE800323435 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BF1C528DC0DE800323435 /* Title.swift */; };
 		714BF1C828DC0FF200323435 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BF1C728DC0FF200323435 /* PrimaryButton.swift */; };
+		714BF1CB28DCBCDC00323435 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BF1CA28DCBCDC00323435 /* LoginView.swift */; };
+		714BF1CD28DCBEEB00323435 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BF1CC28DCBEEB00323435 /* AuthenticationManager.swift */; };
+		7185BF0D28DCDD5F004A9D18 /* CredentialsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185BF0C28DCDD5F004A9D18 /* CredentialsLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		714BF1BD28DC0A0D00323435 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		714BF1C528DC0DE800323435 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		714BF1C728DC0FF200323435 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		714BF1CA28DCBCDC00323435 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		714BF1CC28DCBEEB00323435 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		7185BF0C28DCDD5F004A9D18 /* CredentialsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 		714BF1AA28DC0A0B00323435 = {
 			isa = PBXGroup;
 			children = (
+				7185BF0C28DCDD5F004A9D18 /* CredentialsLoginView.swift */,
 				714BF1B528DC0A0B00323435 /* faceIDtest1 */,
 				714BF1B428DC0A0B00323435 /* Products */,
 			);
@@ -55,11 +62,12 @@
 		714BF1B528DC0A0B00323435 /* faceIDtest1 */ = {
 			isa = PBXGroup;
 			children = (
+				714BF1C928DCBCB100323435 /* Views */,
 				714BF1B628DC0A0B00323435 /* faceIDtest1App.swift */,
-				714BF1B828DC0A0B00323435 /* ContentView.swift */,
 				714BF1C428DC0DB900323435 /* Components */,
 				714BF1BA28DC0A0D00323435 /* Assets.xcassets */,
 				714BF1BC28DC0A0D00323435 /* Preview Content */,
+				714BF1CC28DCBEEB00323435 /* AuthenticationManager.swift */,
 			);
 			path = faceIDtest1;
 			sourceTree = "<group>";
@@ -79,6 +87,15 @@
 				714BF1C728DC0FF200323435 /* PrimaryButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		714BF1C928DCBCB100323435 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				714BF1B828DC0A0B00323435 /* ContentView.swift */,
+				714BF1CA28DCBCDC00323435 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +170,10 @@
 			files = (
 				714BF1B928DC0A0B00323435 /* ContentView.swift in Sources */,
 				714BF1C628DC0DE800323435 /* Title.swift in Sources */,
+				7185BF0D28DCDD5F004A9D18 /* CredentialsLoginView.swift in Sources */,
 				714BF1C828DC0FF200323435 /* PrimaryButton.swift in Sources */,
+				714BF1CD28DCBEEB00323435 /* AuthenticationManager.swift in Sources */,
+				714BF1CB28DCBCDC00323435 /* LoginView.swift in Sources */,
 				714BF1B728DC0A0B00323435 /* faceIDtest1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +305,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"faceIDtest1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID as decryption";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +334,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"faceIDtest1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID as decryption";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

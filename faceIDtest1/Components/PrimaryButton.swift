@@ -11,6 +11,7 @@ struct PrimaryButton: View {
     var image: String?
     var showImage = true
     var text: String
+    
     var body: some View {
         HStack{
             if showImage {
